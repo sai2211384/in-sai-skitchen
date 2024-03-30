@@ -3,13 +3,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: floralwhite; /* Light gray background */
-    color: black; /* Dark text color */
+    background-color: lightgrey; /* Light gray background */
+    color: #333; /* Dark text color */
 }
 
 /* Styling for the header section */
 header {
-    background-color: #212121; /* Mat Black */
+    background-color: #333; /* Official black */
     color: #fff; /* White text color */
     padding: 10px;
     text-align: center;
@@ -46,28 +46,28 @@ nav ul li a {
 
 /* Assign different background colors to each item */
 nav ul li:nth-child(1) a {
-    background-color: #f39c12; /* Orange */
+    background-color: #ff7f0e; /* Official orange */
 }
 
 nav ul li:nth-child(2) a {
-    background-color: #f39c12; /* Orange */
+    background-color: #ff7f0e; /* Official orange */
 }
 
 nav ul li:nth-child(3) a {
-    background-color: #f39c12; /* Orange */
+    background-color: #ff7f0e; /* Official orange */
 }
 
 nav ul li:nth-child(4) a {
-    background-color: #f39c12; /* Orange */
+    background-color: #ff7f0e; /* Official orange */
 }
 nav ul li:nth-child(5) a {
-    background-color: #f39c12; /* Orange */
+    background-color: #ff7f0e; /* Official orange */
 }
 
 
 /* Styling for the hover effect on navigation links */
 nav ul li a:hover {
-    color: #3498db; /* Change color on hover */
+    color: #007bff; /* Official blue: Adjusted for contrast */
 }
 
 /* Styling for the main content section */
@@ -81,7 +81,7 @@ main {
     margin-top: 20px;
     text-align: center;
     text-decoration: none;
-    background-color: #3498db; /* Blue button */
+    background-color: #007bff; /* Official blue */
     color: #fff; /* White text color */
     padding: 10px;
     border-radius: 5px;
@@ -124,35 +124,31 @@ main {
 
 /* Styling for the submit review button */
 .review-form button {
-    background-color: #3498db; /* Blue button */
+    background-color: #007bff; /* Official blue */
     color: #fff; /* White text color */
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 
-/* Styling for the video skeleton layout */
 .video-skeleton {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
 
-/* Styling for the video placeholders */
-.video-placeholder {
-    width: 30%; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
-    background-color: #ddd; /* Light gray background */
-    border-radius: 8px; /* Rounded corners */
+.video-skeleton iframe {
+    width: 35%;
+    margin-bottom: 20px;
 }
-
 /* Styling for the footer section */
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    text-align: right;
     padding: 10px;
-    position: fixed;
+    position: notfixed;
     bottom: 0;
     width: 30%;
 }

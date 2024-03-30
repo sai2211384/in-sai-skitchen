@@ -3,7 +3,7 @@
 <head>
 	<title>In Sai's Kitchen</title>
 	<link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="x-icon" href="logo.PNG">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
 </head>
 <body>
 	
@@ -50,36 +50,55 @@
     </section>
 </main>
 <hr>
-<section class="review-section">
-        <!-- Subheading -->
-        <h2>FEEDBACK</h2>
-        <!-- Review form container -->
-        <div class="review-form">
-            <!-- Review form heading -->
-            <h4>Share your FEEDBACK</h4>
-            <!-- Form for submitting reviews -->
-            <form id="reviewForm">
-                <!-- Input field for name -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+<h2>Website Review Section</h2>
+ <form id="reviewForm">
+<label for="name">Name:</label>
+<input type="text" id="name" required><br>
+<label for="rating">Rating:</label>
+<select id="rating" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select><br>
+<label for="comment">Comment:</label><br>
+<textarea id="comment" rows="4" cols="50" required></textarea><br>
+<button type="submit">Submit</button>
+</form>
 
-                <!-- Textarea for review input -->
-                <label for="review">Your Review:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
+<h3>Reviews:</h3>
+<ul id="reviews">
 
-                <!-- Submit button -->
-                <button type="submit">Submit Review</button>
-            </form>
-        </div>
-        <!-- Container for displaying reviews -->
-        <div id="reviews" class="reviews">
-            <!-- Student reviews will be dynamically added here using JavaScript -->
-        </div>
-    </section>
+</ul>
 
-<footer>
+<script>
+ // JavaScript code to handle form submission and display reviews
+ document.getElementById('reviewForm').addEventListener('submit', function(event) {
+event.preventDefault();
+
+ var name = document.getElementById('name').value;
+var rating = document.getElementById('rating').value;
+ var comment = document.getElementById('comment').value;
+
+ var reviewElement = document.createElement('li');
+ reviewElement.className = 'review';
+ reviewElement.innerHTML = '<strong>' + name + '</strong> - Rating: ' + rating + '<br>' + comment;
+
+ document.getElementById('reviews').appendChild(reviewElement);
+
+ document.getElementById('name').value = '';
+ document.getElementById('rating').value = '1';
+document.getElementById('comment').value = '';
+});
+ </script>
+</body>
+<div id="reviews-container" class="reviews">
+    <!-- Existing reviews -->
+</div>
+<footer id="footer">
     <!-- Copyright information -->
     <p>&copy; 2024 In Sai's Kitchen. All rights reserved.</p>
 </footer>
-</body>
+
 </html>
