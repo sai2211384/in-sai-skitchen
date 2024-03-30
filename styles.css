@@ -60,7 +60,9 @@ nav ul li:nth-child(3) a {
 nav ul li:nth-child(4) a {
     background-color: #f39c12; /* Orange */
 }
-
+nav ul li:nth-child(5) a {
+    background-color: #f39c12; /* Orange */
+}
 
 
 /* Styling for the hover effect on navigation links */
