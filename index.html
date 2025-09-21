@@ -1,104 +1,232 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>In Sai's Kitchen</title>
-	<link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Sai's Kitchen - Authentic Indian Recipes</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	
     <header>
-    
-    <!-- Main heading -->
-    <h1>In Sai's Kitchen</h1>
-    <h5>Mobile no.:0222-333245 ; Instagram:<a href="https://www.instagram.com/madhurasrecipe?igsh=Y285anVzOXo2cG11"><img src="microproject6.png" width="30" height="30"></a></h5>E-mail:-<a href="mailto:mrane1146@gmail.com"><button><border>mrane1146@gmail.com</border></button></a>
-    
+        <div class="container">
+            <h1>In Sai's Kitchen</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📱 Mobile: 0222-333245</span>
+                </div>
+                <div class="contact-item">
+                    <span>📧 Email: </span>
+                    <a href="mailto:mrane1146@gmail.com">
+                        <button class="email-btn">mrane1146@gmail.com</button>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <span>📸 Instagram: </span>
+                    <a href="https://www.instagram.com/madhurasrecipe?igsh=Y285anVzOXo2cG11" target="_blank">
+                        @madhurasrecipe
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
-
-<nav>
-	<ul>
-        
-        <li><a href="MICROPROJECT2.HTML">Misal Pav</a></li>       
-        <li><a href="MICROPROJECT3.HTML">Pineapple Sheera</a></li>
-        <li><a href="MICROPROJECT4.HTML">Pav Bhaji</a></li>
-        <li><a href="MICROPROJECT5.HTML">Paneer Masala</a></li>
-        <li><a href="https://www.amazon.in/Tiffin-Authentic-Recipes-Celebrating-Regional/dp/8193704967/ref=sr_1_3?crid=2C0IVBKLI0KHV&dib=eyJ2IjoiMSJ9.-zGiYHdVUzy36PBfQSIVcJuCxyJIol6waLtFTQPtXpxT5CZsg_ZJQGP-SP7lD8ttjI8of0JrHxRaInYU01yzLhTEBNVoJNl22m-1KLcasGP55rIq8zsUJGxcz6dnsTaa-5gefyVbRBF0Nk93QHtq4wD3VCh9NQBMzr1NltGnb_HoVseJBbY9KVlOh3Lh1W8CVCSbnSuqaosJdtuX123lt2QOHRznBBQqLqh6XIMUtFg.5BqZt-Q1TLIISxm4fV4LfXbCxxzoxcXxwkTtDv4EChI&dib_tag=se&keywords=recipe+books&qid=1711707329&sprefix=%2Caps%2C234&sr=8-3">Buy Recipe Book</a></li>
-        <li><a href="index.html" class="return-home">Return to Home</a></li>
-        
-    </ul>
-</nav>
-
-<hr>
-<main>
-    <!-- Welcome section -->
-    <section class="welcome-section">
-        <!-- Subheading -->
-        <h2>Watch Recipe on Youtube</h2>
-        <!-- Description text -->
-        <p>Select a Recipe to explore more.</p>
-
-        <!-- Container for video placeholders -->
-        <div class="video-skeleton">
-            <!-- Replace 'VIDEO_ID' with the actual YouTube video IDs -->
-            <!-- Three video iframes with YouTube video URLs -->
-            <iframe width="320" height="210" src="https://www.youtube.com/embed/0K5_06vxY28?si=sCXGmLYMviT1V5uG" frameborder="5" allowfullscreen></iframe>
-            <iframe width="320" height="210" src="https://www.youtube.com/embed/hjW7_41C21M?si=N7kabRC6pDqQm9Au" frameborder="5" allowfullscreen></iframe>
-            <iframe width="320" height="210" src="https://www.youtube.com/embed/ClH7QI02fNc?si=K4e7zZcoQMu_9GZI" frameborder="5" allowfullscreen></iframe>
-            <iframe width="320" height="210" src="https://www.youtube.com/embed/Cvnr-Log1m8?si=wEKZ8DPPfVt6BsoN"   frameborder="5" allowfullscreen></iframe>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="MICROPROJECT2.HTML">🍛 Misal Pav</a></li>
+                <li><a href="MICROPROJECT3.HTML">🍰 Pineapple Sheera</a></li>
+                <li><a href="MICROPROJECT4.HTML">🍞 Pav Bhaji</a></li>
+                <li><a href="MICROPROJECT5.HTML">🧀 Paneer Masala</a></li>
+                <li><a href="https://www.amazon.in/Tiffin-Authentic-Recipes-Celebrating-Regional/dp/8193704967" target="_blank" class="book-link">📚 Buy Recipe Book</a></li>
+                <li><a href="index.html" class="home-link">🏠 Return to Home</a></li>
+            </ul>
         </div>
-    </section>
-</main>
-<hr>
-<h2>Website Review Section</h2>
- <form id="reviewForm">
-<label for="name">Name:</label>
-<input type="text" id="name" required><br>
-<label for="rating">Rating:</label>
-<select id="rating" required>
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-</select><br>
-<label for="comment">Comment:</label><br>
-<textarea id="comment" rows="4" cols="50" required></textarea><br>
-<button type="submit">Submit</button>
-</form>
+    </nav>
 
-<h3>Reviews:</h3>
-<ul id="reviews">
+    <main class="container">
+        <section class="hero-section">
+            <h2>Welcome to Authentic Indian Cooking</h2>
+            <p class="hero-text">Discover the rich flavors and traditional recipes passed down through generations. Each dish tells a story of culture, love, and the art of Indian cuisine.</p>
+        </section>
 
-</ul>
+        <section class="video-section">
+            <h2>🎥 Watch Recipe Videos on YouTube</h2>
+            <p class="section-description">Learn step-by-step cooking techniques with our detailed video tutorials</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/0K5_06vxY28?si=sCXGmLYMviT1V5uG" allowfullscreen></iframe>
+                    <h3>Traditional Misal Pav</h3>
+                </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/hjW7_41C21M?si=N7kabRC6pDqQm9Au" allowfullscreen></iframe>
+                    <h3>Sweet Pineapple Sheera</h3>
+                </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/ClH7QI02fNc?si=K4e7zZcoQMu_9GZI" allowfullscreen></iframe>
+                    <h3>Mumbai Style Pav Bhaji</h3>
+                </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/Cvnr-Log1m8?si=wEKZ8DPPfVt6BsoN" allowfullscreen></iframe>
+                    <h3>Rich Paneer Masala</h3>
+                </div>
+            </div>
+        </section>
 
-<script>
- // JavaScript code to handle form submission and display reviews
- document.getElementById('reviewForm').addEventListener('submit', function(event) {
-event.preventDefault();
+        <section class="features-section">
+            <h2>Why Choose Sai's Kitchen?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍🍳</div>
+                    <h3>Authentic Recipes</h3>
+                    <p>Traditional Indian recipes with modern cooking techniques</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📹</div>
+                    <h3>Video Tutorials</h3>
+                    <p>Step-by-step video guides for perfect results every time</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌶️</div>
+                    <h3>Spice Knowledge</h3>
+                    <p>Learn about spices and their perfect combinations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Easy to Follow</h3>
+                    <p>Simple instructions that anyone can follow</p>
+                </div>
+            </div>
+        </section>
 
- var name = document.getElementById('name').value;
-var rating = document.getElementById('rating').value;
- var comment = document.getElementById('comment').value;
+        <section class="review-section">
+            <h2>💬 Share Your Experience</h2>
+            <p class="section-description">We'd love to hear about your cooking adventures!</p>
+            
+            <form id="reviewForm" class="review-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comment">Your Review</label>
+                    <textarea id="comment" required placeholder="Share your thoughts about our recipes..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
 
- var reviewElement = document.createElement('li');
- reviewElement.className = 'review';
- reviewElement.innerHTML = '<strong>' + name + '</strong> - Rating: ' + rating + '<br>' + comment;
+            <div class="reviews-container">
+                <h3>Recent Reviews</h3>
+                <ul id="reviews" class="reviews-list"></ul>
+            </div>
+        </section>
+    </main>
 
- document.getElementById('reviews').appendChild(reviewElement);
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 In Sai's Kitchen. All rights reserved. Made with ❤️ for food lovers.</p>
+            <div class="footer-links">
+                <a href="mailto:mrane1146@gmail.com">Contact Us</a>
+                <a href="https://www.instagram.com/madhurasrecipe" target="_blank">Follow on Instagram</a>
+            </div>
+        </div>
+    </footer>
 
- document.getElementById('name').value = '';
- document.getElementById('rating').value = '1';
-document.getElementById('comment').value = '';
-});
- </script>
+    <script>
+        // Enhanced form submission with better UX
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const rating = document.querySelector('input[name="rating"]:checked');
+            const comment = document.getElementById('comment').value.trim();
+
+            if (!rating) {
+                alert('Please select a rating!');
+                return;
+            }
+
+            const reviewElement = document.createElement('li');
+            reviewElement.className = 'review-item';
+            reviewElement.innerHTML = `
+                <div class="review-header">
+                    <strong class="reviewer-name">${name}</strong>
+                    <div class="rating-stars">${'★'.repeat(parseInt(rating.value))}${'☆'.repeat(5-parseInt(rating.value))}</div>
+                    <span class="review-date">${new Date().toLocaleDateString()}</span>
+                </div>
+                <p class="review-comment">${comment}</p>
+            `;
+
+            const reviewsList = document.getElementById('reviews');
+            reviewsList.insertBefore(reviewElement, reviewsList.firstChild);
+
+            // Reset form
+            this.reset();
+            
+            // Show success message
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Thank you! ✓';
+            submitBtn.style.background = '#27ae60';
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = '';
+            }, 2000);
+        });
+
+        // Add some sample reviews for demonstration
+        window.addEventListener('load', function() {
+            const sampleReviews = [
+                { name: 'Priya Sharma', rating: 5, comment: 'Amazing recipes! The Misal Pav turned out perfect. Thank you for the detailed instructions.', date: '2024-09-15' },
+                { name: 'Rajesh Kumar', rating: 4, comment: 'Very helpful videos. My family loved the Paneer Masala recipe.', date: '2024-09-10' },
+                { name: 'Anita Patel', rating: 5, comment: 'Authentic taste just like my grandmother used to make. Highly recommended!', date: '2024-09-08' }
+            ];
+
+            const reviewsList = document.getElementById('reviews');
+            sampleReviews.forEach(review => {
+                const reviewElement = document.createElement('li');
+                reviewElement.className = 'review-item';
+                reviewElement.innerHTML = `
+                    <div class="review-header">
+                        <strong class="reviewer-name">${review.name}</strong>
+                        <div class="rating-stars">${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}</div>
+                        <span class="review-date">${review.date}</span>
+                    </div>
+                    <p class="review-comment">${review.comment}</p>
+                `;
+                reviewsList.appendChild(reviewElement);
+            });
+        });
+
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
-<div id="reviews-container" class="reviews">
-    <!-- Existing reviews -->
-</div>
-<footer id="footer">
-    <!-- Copyright information -->
-    <p>&copy; 2024 In Sai's Kitchen. All rights reserved.</p>
-</footer>
-
 </html>
